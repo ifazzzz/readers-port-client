@@ -1,0 +1,110 @@
+[
+    {
+        "title": "Novels",
+        "thumbnail": "https://images.pexels.com/photos/214659/pexels-photo-214659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "products": [
+            {
+                "name": "Harry Potter Collection",
+                "img": "https://images.unsplash.com/photo-1606311698062-21c4f57cb27f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=758&q=80",
+                "location": "Khilgaon,Dhaka",
+                "resale-price": "৳120",
+                "original-price": "৳450",
+                "used-time": "1 year",
+                "posted": "12/11/20222",
+                "seller": "Rahim Uddin"
+            },
+            {
+                "name": "Sculpture",
+                "img": "https://images.unsplash.com/photo-1619164025195-985d31ae8844?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
+                "location": "Gulshan,Dhaka",
+                "resale-price": "৳80",
+                "original-price": "$280",
+                "used-time": "1.5 year",
+                "posted": "28/10/2022",
+                "seller": "Nusrat Jahan"
+            },
+            {
+                "name": "Sherlock Series",
+                "img": "https://media.karousell.com/media/photos/products/2022/6/17/secondhand_book__sherlock_holm_1655463909_a2fdb341_progressive.jpg",
+                "location": "Mirpur,Dhaka",
+                "resale-price": "৳180",
+                "original-price": "৳380",
+                "used-time": "6 months",
+                "posted": "14/04/2022",
+                "seller": "Masud Rana"
+            }
+        ]
+    },
+    {
+        "title": "Self Improvement",
+        "thumbnail": "https://images.pexels.com/photos/4861355/pexels-photo-4861355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "products": [
+            {
+                "name": "Atomic Habits",
+                "img": "https://uploads-ssl.webflow.com/5f359c073455c743bc873ee4/60154c6f90820a29d22aea87_1*A1IJOoSohTXjX_uehPOHaA.jpeg",
+                "location": "Banani,Dhaka",
+                "resale-price": "৳40",
+                "original-price": "৳200",
+                "used-time": "1 year",
+                "posted": "12/01/2022",
+                "seller": "Ifaz Ahmed"
+            },
+            {
+                "name": "The 4 hour work week",
+                "img": "https://i0.wp.com/ginger-fox.com/wp-content/uploads/2016/08/a14.jpg?fit=750%2C1125&ssl=1",
+                "location": "Mitijheel, Dhaka",
+                "resale-price": "৳90",
+                "original-price": "৳320",
+                "used-time": "8 months",
+                "posted": "21/05/2022",
+                "seller": "Nadim Shah"
+            },
+            {
+                "name": "Flow",
+                "img": "https://theravensquilldotcom.files.wordpress.com/2019/02/20190211_191103-e1549931349583.jpg",
+                "location": "Mohammadpur, Dhaka",
+                "resale-price": "৳70",
+                "original-price": "৳250",
+                "used-time": "1.5 year",
+                "posted": "12/08/2022",
+                "seller": "Noyon Bond"
+            }
+        ]
+    },
+    {
+        "title": "Academic",
+        "thumbnail": "https://images.pexels.com/photos/9158358/pexels-photo-9158358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "products": [
+            {
+                "name": "Udvash Practice Book",
+                "img": "https://sg-test-11.slatic.net/other/roc/15d44af58d476d424959ee6d0b946e92.jpg",
+                "location": "FarmGate, Dhaka",
+                "resale-price": "৳150",
+                "original-price": "৳500",
+                "used-time": "3 months",
+                "posted": "11/10/2022",
+                "seller": "Buet er Bhaiya"
+            },
+            {
+                "name": "IELTS writing",
+                "img": "https://bookflow.in/wp-content/uploads/2022/10/image-9-768x1024.jpg",
+                "location": "Shahbag,Dhaka",
+                "resale-price": "৳120",
+                "original-price": "৳250",
+                "used-time": "2 years",
+                "posted": "05/04/2022",
+                "seller": "Ayman Sadiq"
+            },
+            {
+                "name": "Class 12 Books",
+                "img": "https://apollo-singapore.akamaized.net/v1/files/0weh77az2doq1-IN/image;s=272x0",
+                "location": "Puran Dhaka",
+                "resale-price": "৳260",
+                "original-price": "৳600",
+                "used-time": "2.5 years",
+                "posted": "22/10/2022",
+                "seller": "Abul Hossain"
+            }
+        ]
+    }
+]
