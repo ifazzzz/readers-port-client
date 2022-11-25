@@ -44,7 +44,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     {
-                        user?.uid? <Link onclick={handleLogout} className="btn btn-secondary">Log Out</Link>
+                        user?.uid? <Link onClick={handleLogout} className="btn btn-secondary">Log Out</Link>
                         :
                         <Link to='/login' className="btn btn-secondary">Login</Link>
                     }
