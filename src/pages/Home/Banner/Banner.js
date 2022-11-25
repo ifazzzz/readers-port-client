@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -9,7 +10,7 @@ const Banner = () => {
                     <div className="max-w-md">
                     <h1 className="text-white mb-5 text-5xl font-bold">Buy And Sell Books</h1>
                     <p className="text-white mb-5">Get Your desired Book With Best Price or sell your used books at reasonable prices. You Can buy or sell books anywhere near Dhaka city. Build and share your knowledge</p>
-                    <button className="btn btn-secondary text-primary">Get Started</button>
+                    <Link to='/register'><button className="btn btn-secondary text-primary">Get Started</button></Link>
                     </div>
                 </div>
             </div>
