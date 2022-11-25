@@ -62,10 +62,6 @@ const Register = () => {
                 </div>
                 <form onSubmit={handleSubmit(handleRegister)} className="space-y-12 ng-untouched ng-pristine ng-valid">
                     <div className="space-y-4">
-                        {/* <div>
-                            <input {...register('role')} type="checkbox" name="role" id="user" />user
-                            <input {...register('role')} type="checkbox" name="role" id="seller" />seller
-                        </div> */}
                         <div>
                             <select {...register('type')} className="select select-bordered w-full border-gray-300 bg-gray-50 text-gray-800">
                             <option defaultValue value="user">User</option>

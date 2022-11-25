@@ -25,7 +25,7 @@ const DashBoardLayout = () => {
            <div className="drawer drawer-mobile">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col items-center justify-center">
-                <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+                <label htmlFor="my-drawer-2" className="my-4 btn btn-primary text-secondary drawer-button lg:hidden">Open Sidebar</label>
                     <Outlet></Outlet>             
                 </div> 
                 <div className="drawer-side">
