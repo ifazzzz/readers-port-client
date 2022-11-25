@@ -1,6 +1,6 @@
 import React from 'react';
 import { BsCheckCircle } from "react-icons/bs";
-const ProductsCard = ({product}) => {
+const ProductsCard = ({product, setModalInfo}) => {
 
     const {name, img, location, originalPrice, resalePrice, posted, seller, usedTime } = product;
 
@@ -25,7 +25,7 @@ const ProductsCard = ({product}) => {
                         <div>
                             <p className="text-lg">Location : {location}</p>
                         </div>
-                    <button className="btn btn-primary text-white">Book Now</button>
+                    <label onClick={() =>setModalInfo(product)} htmlFor="booking-modal" className="btn btn-primary text-white">Book Now</label>
                     </div>
                 </div>
             </div> 

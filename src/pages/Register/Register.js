@@ -10,16 +10,17 @@ const Register = () => {
 
     const {createUser, updateUser} = useContext(AuthContext);
 
-    const {register, handleSubmit, formState :{ errors}} =  useForm();
+    const {register, handleSubmit, formState :{ errors}, reset} =  useForm();
 
     const handleRegister = (data) => {
-          const {name, email, image, password} = data;
+          const {name, email, image, password, type} = data;
 
           createUser(email, password)
           .then(result => {
             const user = result.user;
-            console.log(user);
-            toast.success('User created successfully')
+            console.log(user); 
+            reset();          
+            saveUser(name, email, type)
             const profile = {
                 displayName : name,
                 photoURL : image
@@ -31,6 +32,26 @@ const Register = () => {
           .catch(err => console.error(err));
     }
 
+    const saveUser = (name, email, type) => {
+        const user = {
+            name, 
+            email,
+            type
+        }
+        fetch('http://localhost:5000/users',{
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json'},
+            body : JSON.stringify(user)
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.acknowledged){
+                toast.success('User created successfully')
+            }
+        })
+
+    }
+
     return (
         <div className="container mx-auto my-40">
             <div className="flex flex-col w-1/3 mx-auto p-6 rounded-md sm:p-10 bg-gray-50 text-gray-800">
@@ -40,6 +61,12 @@ const Register = () => {
                 </div>
                 <form onSubmit={handleSubmit(handleRegister)} className="space-y-12 ng-untouched ng-pristine ng-valid">
                     <div className="space-y-4">
+                        <div>
+                            <select {...register('type')} className="select select-bordered w-full border-gray-300 bg-gray-50 text-gray-800">
+                            <option defaultValue>User</option>
+                            <option>Seller</option>                          
+                            </select>
+                        </div>
                         <div>
                             <label htmlFor="name" className="block mb-2 text-sm">Full Name</label>
                             <input type="name" name="name" placeholder="Enter Full Name" className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800" 
@@ -53,6 +80,7 @@ const Register = () => {
                             <input type="text" name="image" placeholder="Photo URL" className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800" 
                             {...register('image')}/>
                         </div>
+                            
                         <div>
                             <label htmlFor="email" className="block mb-2 text-sm">Email address</label>
                             <input type="email" name="email" id="email" placeholder="Enter Email Address" className="w-full px-3 py-2 border rounded-md border-gray-300 bg-gray-50 text-gray-800"

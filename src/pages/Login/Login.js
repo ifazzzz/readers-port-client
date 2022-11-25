@@ -7,7 +7,7 @@ const Login = () => {
    
     const {signIn, googleLogin, githubLogin} = useContext(AuthContext);
     
-    const {register, handleSubmit, formState :{ errors}} =  useForm();
+    const {register, handleSubmit, formState :{ errors}, reset} =  useForm();
 
     const location = useLocation();
     const navigate = useNavigate();
@@ -20,6 +20,7 @@ const Login = () => {
         .then(result => {
             const user = result.user;
             console.log(user);
+            reset();
             navigate(from, {replace: true})
             
         })
