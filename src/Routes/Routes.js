@@ -8,6 +8,7 @@ import AllSellers from "../pages/Dashboard/AllSellers/AllSellers";
 import MyBuyers from "../pages/Dashboard/MyBuyers/MyBuyers";
 import MyOrders from "../pages/Dashboard/MyOrders/MyOrders";
 import MyProducts from "../pages/Dashboard/MyProducts/MyProducts";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home/Home";
 
 
@@ -19,6 +20,7 @@ import PrivateRoute from "./PrivateRoute";
 export const router = createBrowserRouter([
     {
         path : '/',
+        errorElement : <ErrorPage></ErrorPage>,
         element : <Main></Main>,
         children : [
             {

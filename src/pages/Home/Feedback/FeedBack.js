@@ -53,22 +53,22 @@ const FeedBack = () => {
                         aria-label="Read article"
                         title="Nori grape silver beet broccoli kombu beet"
                     >
-                        Write your own! Be sure to mix in quotes, results, 
+                        Readers Port Is the Best Place for BookWorms 
                     </a>
                     <p className="max-w-xs mx-auto mb-2 text-gray-700">
-                    and info from your customer to back up your claims. Each case study should read like a partnership—not just a one-sided perspective. 
+                    Readers Port is arguably the leading online community for book lovers. If you want some inspiration for which novel or biography to read next, this is the book review site to visit.
                     </p>
                     <a
                         href="/"
                         aria-label=""
                         className="inline-flex items-center font-semibold transition-colors duration-200 text-primary hover:text-secondary"
                     >
-                        Read more
+                        
                     </a>
                     </div>
                     <div className="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20">
                     <p className="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
-                        20 Nov 2022
+                        28 Nov 2022
                     </p>
                     <a
                         href="/"
@@ -76,22 +76,21 @@ const FeedBack = () => {
                         aria-label="Read article"
                         title="Nori grape silver beet broccoli kombu beet"
                     >
-                        Write your own! Be sure to mix in quotes, results, 
+                       Buying And Selling Books Is so easy here 
                     </a>
-                    <p className="max-w-xs mx-auto mb-2 text-gray-700">
-                    and info from your customer to back up your claims. Each case study should read like a partnership—not just a one-sided perspective. 
+                    <p className="max-w-xs mx-auto mb-2 text-gray-700">You can participate in the community by Buying and selling your own rankings to books you've read and leaving reviews for other people to check out. Occasionally, there are even bonus events like question and answer sessions with authors. 
                     </p>
                     <a
                         href="/"
                         aria-label=""
                         className="inline-flex items-center font-semibold transition-colors duration-200 text-primary hover:text-secondary"
                     >
-                        Read more
+                        
                     </a>
                     </div>
                     <div className="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20">
                     <p className="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
-                        20 Nov 2022
+                        12 Nov 2022
                     </p>
                     <a
                         href="/"
@@ -99,17 +98,17 @@ const FeedBack = () => {
                         aria-label="Read article"
                         title="Nori grape silver beet broccoli kombu beet"
                     >
-                        Write your own! Be sure to mix in quotes, results, 
+                        A great Community for Readers and that want to contribute 
                     </a>
                     <p className="max-w-xs mx-auto mb-2 text-gray-700">
-                    and info from your customer to back up your claims. Each case study should read like a partnership—not just a one-sided perspective. 
+                    Naturally, there are ratings, user reviews, and tags. But be sure to click on the Zeitgeist tab at the top of the page. It contains masses of information, including the top books by rating, by the number of reviews, by authors, and loads more.
                     </p>
                     <a
                         href="/"
                         aria-label=""
                         className="inline-flex items-center font-semibold transition-colors duration-200 text-primary hover:text-secondary"
                     >
-                        Read more
+                        
                     </a>
                     </div>
                 </div>

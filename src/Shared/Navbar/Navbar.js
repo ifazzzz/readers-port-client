@@ -15,12 +15,12 @@ const Navbar = () => {
     const menuItems = 
     <>
      <li><Link to='/'>Home</Link></li>       
-     <li><Link>Reviews</Link></li>
+     <li><Link to='/reviews'>Reviews</Link></li>
        {
         user?.uid && <li><Link to='/dashboard'>DashBoard</Link></li>
        }
      <li><Link to='/blog'>Blog</Link></li>       
-     <li><Link>About</Link></li>       
+     <li><Link to='/about'>About</Link></li>       
     </>
 
     return (
