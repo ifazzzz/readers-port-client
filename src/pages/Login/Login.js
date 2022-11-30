@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
 
@@ -31,7 +32,30 @@ const Login = () => {
         googleLogin()
         .then(result => {
             const user = result.user;
-            console.log(user);
+            const name = user.displayName;
+            const email = user.email
+            const type = "user";
+
+            const profile = {
+                
+                    name, 
+                    email,
+                    type
+                
+            }
+            console.log(profile);
+            fetch('http://localhost:5000/users',{
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json'},
+            body : JSON.stringify(profile)
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.acknowledged){
+                toast.success('Logged in successfully')
+            }
+        })
+
             navigate(from, {replace: true})
         })
         .catch(err => {console.log(err);})
@@ -41,7 +65,30 @@ const Login = () => {
         githubLogin()
         .then(result => {
             const user = result.user;
-            console.log(user);
+            const name = user.displayName;
+            const email = user.email
+            const type = "user";
+
+            const profile = {
+                
+                    name, 
+                    email,
+                    type
+                
+            }
+            console.log(profile);
+            fetch('http://localhost:5000/users',{
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json'},
+            body : JSON.stringify(profile)
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.acknowledged){
+                toast.success('Logged in successfully')
+            }
+        })
+
             navigate(from, {replace: true})
         })
         .catch(err => {console.log(err);})

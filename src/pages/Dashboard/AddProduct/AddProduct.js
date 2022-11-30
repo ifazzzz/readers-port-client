@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../../Contexts/AuthProvider';
 
 const AddProduct = () => {
 
+    const {user} = useContext(AuthContext);
+    const email = user?.email;
     const {register, handleSubmit, reset} = useForm();
     
     const navigate = useNavigate();
 
     const addProduct = data => {
         const {category, condition, date, description, location, name, number, originalPrice, price} = data;
+        const status = "available";
         const product = {
-            category, condition, date, description, location, name, number, originalPrice, price
+            email, category, condition, date, description, location, name, number, originalPrice, price, status
         }
         fetch('http://localhost:5000/addedProduct', {
             method: 'POST',
