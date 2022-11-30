@@ -1,3 +1,42 @@
+project Name : Readers port
+
+Live Site : [https://it-learner-90735.web.app/]
+
+
+Project Summary
+
+This project is a Used book buy and seeling website
+
+Features & functionality :
+
+* User Authentication with email & password , google and github.
+* used Book buy and selling.
+* seller can add a new books.
+* provides premium access to signed users.
+* Provides smooth transaction between buyer and seller.
+* responsive in any type of devices.
+
+
+* Technologies used :
+* React.js
+* React-Router
+* tailwind css
+* React-icons
+* Firebase
+* Email Authentication
+* Google Authentication
+* github Authentication
+
+Available Pages :
+* Home
+* Dashboard
+* Blog
+* login
+* register
+* products
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

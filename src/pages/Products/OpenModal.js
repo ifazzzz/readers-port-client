@@ -27,7 +27,7 @@ const OpenModal = ({modalInfo, setModalInfo}) => {
             location
          }
 
-         fetch('https://readers-port-server.vercel.app/bookings',{
+         fetch('https://readers-port-server-ifazzzz.vercel.app/bookings',{
             method: 'POST',
             headers : {
                 'content-type': 'application/json'

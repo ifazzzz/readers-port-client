@@ -7,14 +7,14 @@ const AllSellers = () => {
     const {data : allSellers = [], refetch} = useQuery({
         queryKey : ['seller'],
         queryFn : async ()=> {
-            const res = await fetch('https://readers-port-server.vercel.app/allSellers')
+            const res = await fetch('https://readers-port-server-ifazzzz.vercel.app/allSellers')
             const data = await res.json();
             return data;
         }
     })
 
     const deleteSeller = (id) => {
-         fetch(`https://readers-port-server.vercel.app/allSellers/${id}`,{
+         fetch(`https://readers-port-server-ifazzzz.vercel.app/allSellers/${id}`,{
             method: 'DELETE',
          })
          .then(res => res.json())

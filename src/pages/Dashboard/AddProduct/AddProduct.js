@@ -18,7 +18,7 @@ const AddProduct = () => {
         const product = {
             email, category, condition, date, description, location, name, number, originalPrice, price, status
         }
-        fetch('https://readers-port-server.vercel.app/addedProduct', {
+        fetch('https://readers-port-server-ifazzzz.vercel.app/addedProduct', {
             method: 'POST',
             headers : {
                 'Content-Type': 'application/json'

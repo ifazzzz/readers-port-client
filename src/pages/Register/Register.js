@@ -39,7 +39,7 @@ const Register = () => {
             email,
             type
         }
-        fetch('https://readers-port-server.vercel.app/users',{
+        fetch('https://readers-port-server-ifazzzz.vercel.app/users',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body : JSON.stringify(user)

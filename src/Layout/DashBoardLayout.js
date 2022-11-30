@@ -10,7 +10,7 @@ const DashBoardLayout = () => {
     const [userInfo, setUserInfo] = useState()
 
     useEffect(() => {
-        fetch(`https://readers-port-server.vercel.app/users?email=${user?.email}`)
+        fetch(`https://readers-port-server-ifazzzz.vercel.app/users?email=${user?.email}`)
         .then(res => res.json())
         .then(data => setUserInfo(data))
     },[user?.email])

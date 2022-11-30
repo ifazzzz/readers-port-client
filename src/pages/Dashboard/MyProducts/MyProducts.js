@@ -9,7 +9,7 @@ const MyProducts = () => {
     const [myProducts, setMyProducts] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://readers-port-server.vercel.app/myProducts?email=${user?.email}`)
+        axios.get(`https://readers-port-server-ifazzzz.vercel.app/myProducts?email=${user?.email}`)
         .then(data => {
             const loaded = data.data;
             setMyProducts(loaded);
@@ -18,7 +18,7 @@ const MyProducts = () => {
 
     const handleAdvertise = (product) => {
         
-        fetch('https://readers-port-server.vercel.app/advertise', {
+        fetch('https://readers-port-server-ifazzzz.vercel.app/advertise', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -34,7 +34,7 @@ const MyProducts = () => {
     }
 
     const deleteProduct = (id) => {
-        fetch(`https://readers-port-server.vercel.app/addedProducts/${id}`,{
+        fetch(`https://readers-port-server-ifazzzz.vercel.app/addedProducts/${id}`,{
             method: 'DELETE',
         })
         .then(res => res.json())

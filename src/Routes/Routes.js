@@ -42,7 +42,7 @@ export const router = createBrowserRouter([
             {
                 path : '/category/:id',
                 element : <PrivateRoute><Products></Products></PrivateRoute>,
-                loader : ({params})=> fetch(`https://readers-port-server.vercel.app/category/${params.id}`)
+                loader : ({params})=> fetch(`https://readers-port-server-ifazzzz.vercel.app/category/${params.id}`)
             }
         ]
     },
