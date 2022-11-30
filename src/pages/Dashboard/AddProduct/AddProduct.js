@@ -18,7 +18,7 @@ const AddProduct = () => {
         const product = {
             email, category, condition, date, description, location, name, number, originalPrice, price, status
         }
-        fetch('http://localhost:5000/addedProduct', {
+        fetch('https://readers-port-server.vercel.app/addedProduct', {
             method: 'POST',
             headers : {
                 'Content-Type': 'application/json'

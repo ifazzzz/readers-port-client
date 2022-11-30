@@ -44,7 +44,7 @@ const Login = () => {
                 
             }
             console.log(profile);
-            fetch('http://localhost:5000/users',{
+            fetch('https://readers-port-server.vercel.app/users',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body : JSON.stringify(profile)
@@ -77,7 +77,7 @@ const Login = () => {
                 
             }
             console.log(profile);
-            fetch('http://localhost:5000/users',{
+            fetch('https://readers-port-server.vercel.app/users',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body : JSON.stringify(profile)

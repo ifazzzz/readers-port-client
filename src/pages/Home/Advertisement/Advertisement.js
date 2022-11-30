@@ -9,7 +9,7 @@ const Advertisement = () => {
         queryKey : ['advertisedItem'],
         queryFn : async ()=> {
             try{
-               const res = await fetch('http://localhost:5000/advertisedItems');
+               const res = await fetch('https://readers-port-server.vercel.app/advertisedItems');
                const data = await res.json();
                console.log();
                return data;
@@ -26,13 +26,13 @@ const Advertisement = () => {
 
     const updateProduct = (id) => {
         console.log(id);
-        fetch(`http://localhost:5000/updateProduct/${id}`,{
+        fetch(`https://readers-port-server.vercel.app/updateProduct/${id}`,{
             method : 'PATCH',
         })
         .then(res => res.json())
         .then(data => {
             if(data.modifiedCount > 0) {
-                fetch(`http://localhost:5000/advertisedItems/${id}`, {
+                fetch(`https://readers-port-server.vercel.app/advertisedItems/${id}`, {
                     method : 'DELETE',
                 })
                 .then(res => res.json())

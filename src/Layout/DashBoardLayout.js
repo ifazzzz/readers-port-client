@@ -10,7 +10,7 @@ const DashBoardLayout = () => {
     const [userInfo, setUserInfo] = useState()
 
     useEffect(() => {
-        fetch(`http://localhost:5000/users?email=${user?.email}`)
+        fetch(`https://readers-port-server.vercel.app/users?email=${user?.email}`)
         .then(res => res.json())
         .then(data => setUserInfo(data))
     },[user?.email])
@@ -40,14 +40,14 @@ const DashBoardLayout = () => {
                         <>
                         <li className="hover:bg-accent hover:text-primary"><Link to='/dashboard/addProduct'>Add Product</Link></li>
                         <li className="hover:bg-accent hover:text-primary"><Link to='/dashboard/myProducts'>My Products</Link></li>
-                        <li className="hover:bg-accent hover:text-primary"><Link to='/dashboard/myBuyers'>My Orders</Link></li>
+                        <li className="hover:bg-accent hover:text-primary"><Link to='/dashboard/myBuyers'>My Buyers</Link></li>
                         </>
                     }
                     {
                         userInfo?.type === "admin" && 
                         <>
-                        <li className="hover:bg-accent hover:text-primary"><Link to='/dashboard/allSellers'>All Sellers</Link></li>
                         <li className="hover:bg-accent hover:text-primary"><Link to='/dashboard/allBuyers'>All Buyers</Link></li>
+                        <li className="hover:bg-accent hover:text-primary"><Link to='/dashboard/allSellers'>All Sellers</Link></li>
                         </>
                     }
                     </ul>               

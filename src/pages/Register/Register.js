@@ -21,7 +21,6 @@ const Register = () => {
             const user = result.user;
             console.log(user); 
             reset();          
-            saveUser(name, email, type)
             const profile = {
                 displayName : name,
                 photoURL : image
@@ -29,6 +28,7 @@ const Register = () => {
             updateUser(profile)
             .then(() => {navigate('/')})
             .catch(() => {})
+            saveUser(name, email, type)
           })
           .catch(err => console.error(err));
     }
@@ -39,7 +39,7 @@ const Register = () => {
             email,
             type
         }
-        fetch('http://localhost:5000/users',{
+        fetch('https://readers-port-server.vercel.app/users',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body : JSON.stringify(user)
