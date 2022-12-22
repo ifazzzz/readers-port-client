@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Loader from '../../../Loader/Loader';
 
 const Categories = () => {
 
@@ -17,6 +18,10 @@ const Categories = () => {
            }
         }
     })
+
+    if(!categories){
+        return <Loader></Loader>
+    }
 
     return (
         <div className="container mb-20 mx-auto">
