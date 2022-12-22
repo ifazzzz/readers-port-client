@@ -27,7 +27,7 @@ const Register = () => {
             }
             updateUser(profile)
             .then(() => {navigate('/')})
-            .catch(() => {})
+            .catch((err) => {console.log(err);})
             saveUser(name, email, type)
           })
           .catch(err => console.error(err));
